@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_FragmentTwo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.OneFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_constraintTwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5BCFAD68"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_coche"
+            android:layout_width="380dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/fragment2_coche"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descripcion" />
+
+        <TextView
+            android:id="@+id/txt_descripcion"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="We've helped millions across the nations find their perfect match... and you're next!"
+            android:textAlignment="textStart"
+            android:textColor="#66000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Find Your Match!"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.103"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="33dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Skip"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_coche"
+            app:layout_constraintVertical_bias="0.387"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="33dp"
+            android:backgroundTint="@color/black"
+            android:text="Next"
+            android:textSize="20sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_coche"
+            app:layout_constraintVertical_bias="0.387" />
+
+        <TextView
+            android:id="@+id/txtEstado2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descripcion" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

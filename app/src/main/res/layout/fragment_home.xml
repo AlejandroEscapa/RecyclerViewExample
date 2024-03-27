@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/c_LayoutHomeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/txt_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="90dp"
+        android:gravity="start"
+        android:text="@string/upcoming_meetups"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="42dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title2"
+        app:layout_constraintVertical_bias="0.00999999">
+
+        <LinearLayout
+            android:id="@+id/linear_card1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_card1"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:src="@drawable/fragment2_card2" />
+
+            <TextView
+                android:id="@+id/txt_titleCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="bottom"
+                android:paddingHorizontal="15dp"
+                android:text="@string/angelesString" />
+
+            <TextView
+                android:id="@+id/txt_titleCard2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingHorizontal="15dp"
+                android:text="@string/angelesCityString"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="42dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1"
+        app:layout_constraintVertical_bias="0.00999999">
+
+        <LinearLayout
+            android:id="@+id/linear_card2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_card2"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:src="@drawable/fragment2_card1" />
+
+            <TextView
+                android:id="@+id/txt_titleCard3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="bottom"
+                android:paddingHorizontal="15dp"
+                android:text="@string/maldivasString" />
+
+            <TextView
+                android:id="@+id/txt_titleCard4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingHorizontal="15dp"
+                android:text="@string/vacationString"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_FragmentThree"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.OneFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_constraintThree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#834F9EDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_coche"
+            android:layout_width="380dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="68dp"
+            android:src="@drawable/girl_reading_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descripcion" />
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="@color/white"
+            android:text="Log in"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:cornerRadius="5dp"
+            app:icon="@drawable/arrowdown_icon"
+            app:iconGravity="textEnd"
+            app:iconPadding="10dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_coche"
+            app:layout_constraintVertical_bias="0.61"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/txt_descripcion"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="We've helped millions across the nations find their perfect match... and you're next!"
+            android:textAlignment="textStart"
+            android:textColor="#66000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Find the Perfect Roommate"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.365"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEstado3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descripcion" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
